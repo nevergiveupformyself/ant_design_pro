@@ -4,7 +4,7 @@ import { connect, FormattedMessage, formatMessage } from 'umi';
 import React from 'react';
 import { PageHeaderWrapper } from '@ant-design/pro-layout';
 import styles from './style.less';
-
+import Demo from './Demo';
 const FormItem = Form.Item;
 const { Option } = Select;
 const { RangePicker } = DatePicker;
@@ -67,6 +67,7 @@ const BasicForm = props => {
 
   return (
     <PageHeaderWrapper content={<FormattedMessage id="formandbasic-form.basic.description" />}>
+      <Demo />
       <Card bordered={false}>
         <Form
           hideRequiredMark
